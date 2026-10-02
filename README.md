@@ -4,7 +4,7 @@
 
 ## 使用
 
-直接打开 `index.html`，或将本目录发布为 GitHub Pages。页面不需要后端、账号或第三方脚本。答案仅在浏览器内存中计算，刷新即清空。
+访问 [GitHub Pages 网页](https://lavanderloic-byte.github.io/mood-check/)。本地开发可在此目录运行 `python -m http.server 8000`，再打开 `http://localhost:8000/`。页面不需要后端、账号或第三方脚本。答案仅在浏览器内存中计算，刷新即清空。
 
 ## 计分
 
