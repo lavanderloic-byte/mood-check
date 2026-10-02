@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="用约两分钟完成 PHQ-9 情绪自评。结果只供筛查参考，不是诊断；答案仅在当前浏览器页面计算。">
+  <title>最近两周，你还好吗？｜情绪自评</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="情绪自评首页"><span class="brand-mark" aria-hidden="true">✳</span> 情绪自评</a>
+      <span class="private-badge">🔒 不上传答案</span>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="eyebrow">给自己一点时间 · 约 2 分钟</div>
+      <h1 id="page-title">最近两周，<br><em>你还好吗？</em></h1>
+      <p>有时提不起兴趣、觉得难过，值得被认真对待。下面 9 道简短题目，帮你整理最近的感受。</p>
+      <div class="hero-art" aria-hidden="true"><span class="sun"></span><span class="hill hill-back"></span><span class="hill hill-front"></span><span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✦</span></div>
+    </section>
+
+    <section class="intro" aria-label="填写说明">
+      <div><strong>回想过去两周</strong><span>选择每种情况出现的频率，没有对错。</span></div>
+      <div><strong>这是筛查，不是诊断</strong><span>结果不能代替医生或心理专业人员的评估。</span></div>
+    </section>
+
+    <form id="quiz" novalidate>
+      <div class="section-heading">
+        <div><span class="eyebrow">PHQ-9 抑郁症状筛查</span><h2>开始自评</h2></div>
+        <span id="progress-label" class="progress-label">已完成 0 / 9</span>
+      </div>
+      <div class="progress-track" role="progressbar" aria-label="答题进度" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0"><div id="progress-fill"></div></div>
+      <div id="questions"></div>
+      <p id="form-error" class="form-error" role="alert" hidden>请先回答所有题目，再查看结果。</p>
+      <button class="primary-button" type="submit">查看我的结果 <span aria-hidden="true">↗</span></button>
+    </form>
+
+    <section id="result" class="result" aria-live="polite" tabindex="-1" hidden></section>
+
+    <section class="support" aria-labelledby="support-title">
+      <div class="support-icon" aria-hidden="true">♡</div>
+      <div><h2 id="support-title">如果你现在很难受</h2><p>可以先告诉一位信任的人，或联系当地的心理援助、急救服务。如果你可能伤害自己，请立即寻求身边的人陪伴并联系当地急救服务。</p></div>
+    </section>
+
+    <footer>
+      <p>采用 <a href="https://www.phqscreeners.com/" target="_blank" rel="noopener noreferrer">PHQ-9</a> 的 9 题、过去两周回忆期与标准计分区间。任何分数都不能单独确定是否患有抑郁症。</p>
+      <p>隐私说明：答案仅在本页计算，不发送、不保存。关闭或刷新页面后会清空。</p>
+    </footer>
+  </main>
+</body>
+</html>
